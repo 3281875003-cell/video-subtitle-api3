@@ -1,0 +1,36 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <!-- 视频信息 -->
+  <view class="video-info">
+    <view class="title">{{title}}</view>
+    <view class="meta">
+      <text class="platform">平台: {{platform}}</text>
+      <text class="lang">语言: {{language}}</text>
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="actions">
+    <button class="btn-copy-all" bindtap="onCopyAll">复制全部（带时间）</button>
+    <button class="btn-copy-text" bindtap="onCopyTextOnly">仅复制文案</button>
+  </view>
+
+  <!-- 字幕列表 -->
+  <view class="subtitle-list">
+    <view class="subtitle-item" wx:for="{{subtitles}}" wx:key="index" wx:if="{{index < 50 || showAll}}">
+      <text class="time" wx:if="{{item.start}}">{{item.start}}</text>
+      <text class="text">{{item.text}}</text>
+    </view>
+  </view>
+
+  <!-- 加载更多 -->
+  <view class="load-more" wx:if="{{!showAll && subtitles.length > 50}}">
+    <button bindtap="onShowAll">加载全部（共{{subtitles.length}}条）</button>
+  </view>
+
+  <!-- 底部操作 -->
+  <view class="footer">
+    <button class="btn-back" bindtap="onBack">返回首页</button>
+    <button class="btn-share" open-type="share">分享给朋友</button>
+  </view>
+</view>

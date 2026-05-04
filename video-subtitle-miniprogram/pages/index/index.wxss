@@ -1,0 +1,134 @@
+/* pages/index/index.wxss */
+.header {
+  text-align: center;
+  padding: 40rpx 0;
+  background: linear-gradient(135deg, #185FA5, #1E88E5);
+  color: white;
+  border-radius: 0 0 30rpx 30rpx;
+  margin: -30rpx -30rpx 30rpx -30rpx;
+  padding: 60rpx 30rpx 40rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  opacity: 0.9;
+}
+
+/* 输入区域 */
+.input-section {
+  background: white;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.1);
+  margin-bottom: 30rpx;
+}
+
+.input-box {
+  margin-bottom: 20rpx;
+}
+
+.input-box textarea {
+  width: 100%;
+  min-height: 120rpx;
+  padding: 20rpx;
+  border: 2rpx solid #E0E0E0;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+/* 按钮组 */
+.btn-group {
+  display: flex;
+  gap: 20rpx;
+}
+
+.btn-paste, .btn-extract {
+  flex: 1;
+  font-size: 28rpx;
+  padding: 24rpx 0;
+  border-radius: 12rpx;
+  border: none;
+}
+
+.btn-paste {
+  background: #F0F0F0;
+  color: #333;
+}
+
+.btn-extract {
+  background: #185FA5;
+  color: white;
+}
+
+.btn-extract[loading] {
+  opacity: 0.7;
+}
+
+/* 使用提示 */
+.tips {
+  background: white;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.tips-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.tips-item {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+  line-height: 1.6;
+}
+
+/* 加载动画 */
+.loading-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-box {
+  background: white;
+  padding: 60rpx 80rpx;
+  border-radius: 16rpx;
+  text-align: center;
+}
+
+.spinner {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto 20rpx;
+  border: 6rpx solid #E0E0E0;
+  border-top-color: #185FA5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 28rpx;
+  color: #666;
+}

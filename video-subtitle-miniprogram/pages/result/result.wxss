@@ -1,0 +1,130 @@
+/* pages/result/result.wxss */
+.container {
+  padding: 20rpx;
+  background: #F5F5F5;
+  min-height: 100vh;
+}
+
+/* 视频信息 */
+.video-info {
+  background: white;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16rpx;
+  line-height: 1.4;
+}
+
+.meta {
+  display: flex;
+  gap: 20rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 操作按钮 */
+.actions {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.btn-copy-all, .btn-copy-text {
+  flex: 1;
+  font-size: 28rpx;
+  padding: 20rpx;
+  border-radius: 12rpx;
+  border: none;
+}
+
+.btn-copy-all {
+  background: #185FA5;
+  color: white;
+}
+
+.btn-copy-text {
+  background: #F0F0F0;
+  color: #333;
+}
+
+/* 字幕列表 */
+.subtitle-list {
+  background: white;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.subtitle-item {
+  display: flex;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #F0F0F0;
+  align-items: flex-start;
+}
+
+.subtitle-item:last-child {
+  border-bottom: none;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #185FA5;
+  margin-right: 16rpx;
+  min-width: 100rpx;
+  font-family: monospace;
+}
+
+.text {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* 加载更多 */
+.load-more {
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+.load-more button {
+  background: white;
+  color: #185FA5;
+  font-size: 28rpx;
+  border: 2rpx solid #185FA5;
+  border-radius: 12rpx;
+}
+
+/* 底部操作 */
+.footer {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 30rpx;
+  padding-bottom: 40rpx;
+}
+
+.btn-back, .btn-share {
+  flex: 1;
+  font-size: 28rpx;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  border: none;
+}
+
+.btn-back {
+  background: #F0F0F0;
+  color: #333;
+}
+
+.btn-share {
+  background: #185FA5;
+  color: white;
+}
